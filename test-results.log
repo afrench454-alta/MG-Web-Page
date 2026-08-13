@@ -1,0 +1,88 @@
+
+[1m[36m====================================================[0m
+[1m[36m Mow & Glow E2E Test Suite Runner[0m
+[1m[36m Target Directory: C:\Users\frenc\active[0m
+[1m[36m====================================================[0m
+
+[1m--- TIER 1: FEATURE COVERAGE ---[0m
+  [32mΓ£ô [PASS][0m [36mT1.1[0m: Page title contains brand name "Mow & Glow Property Services"
+  [32mΓ£ô [PASS][0m [36mT1.2[0m: CSS defines primary dark slate color #363f48
+  [32mΓ£ô [PASS][0m [36mT1.3[0m: CSS defines primary mint green color #cef0e6
+  [32mΓ£ô [PASS][0m [36mT1.4[0m: CSS defines secondary teal green color #9ae1cc
+  [32mΓ£ô [PASS][0m [36mT1.5[0m: Brand logo title present with "Mow & Glow Property Services"
+  [32mΓ£ô [PASS][0m [36mT1.6[0m: Google fonts link imports "Julius Sans One" and "Montserrat"
+  [32mΓ£ô [PASS][0m [36mT1.7[0m: Exactly 6 service cards present in DOM (found 6)
+  [32mΓ£ô [PASS][0m [36mT1.8[0m: Service card 1 (Lawn mowing) contains correct title & copy keywords
+  [32mΓ£ô [PASS][0m [36mT1.9[0m: Service card 2 (Yard clean-ups) contains correct title & copy keywords
+  [32mΓ£ô [PASS][0m [36mT1.10[0m: Service card 3 (Domestic cleaning) contains correct title & copy keywords
+  [32mΓ£ô [PASS][0m [36mT1.11[0m: Service card 4 (Comprehensive Bond Cleans) contains correct title & copy keywords
+  [32mΓ£ô [PASS][0m [36mT1.12[0m: Service card 5 (NDIS support services) contains correct title & copy keywords
+  [32mΓ£ô [PASS][0m [36mT1.13[0m: Service card 6 (Commercial cleaning) contains correct title & copy keywords
+  [32mΓ£ô [PASS][0m [36mT1.14[0m: Phone number 0400 856 532 present with tel:0400856532 href
+  [32mΓ£ô [PASS][0m [36mT1.15[0m: Email link team@mowglowpropertyservices.com.au present
+  [32mΓ£ô [PASS][0m [36mT1.16[0m: Location business detail "Kingaroy QLD 4610" present
+  [32mΓ£ô [PASS][0m [36mT1.17[0m: ABN details / trust badge present
+  [32mΓ£ô [PASS][0m [36mT1.18[0m: Operating hours (Mon-Fri 8am-5pm, Saturday by appt) present
+  [32mΓ£ô [PASS][0m [36mT1.19[0m: Sticky navbar container #main-header present with sticky positioning
+  [32mΓ£ô [PASS][0m [36mT1.20[0m: Navbar contains required section links (#services, #about, #galleries, #quote-form)
+  [32mΓ£ô [PASS][0m [36mT1.21[0m: Navbar contains prominent Call Now button with tel link
+  [32mΓ£ô [PASS][0m [36mT1.22[0m: Above-the-fold Hero section has direct Call CTA button
+  [32mΓ£ô [PASS][0m [36mT1.23[0m: Above-the-fold Hero section has Get Free Quote CTA button routing to #quote-form
+  [32mΓ£ô [PASS][0m [36mT1.24[0m: #quote-form section and .quote-form-card container exist in DOM
+  [32mΓ£ô [PASS][0m [36mT1.25[0m: #quote-form styling specifies distinct border (#9ae1cc) and box-shadow glow
+  [32mΓ£ô [PASS][0m [36mT1.26[0m: Quote form contains all required fields: Name, Email, Phone, Service, Message, Checkbox, Submit
+  [32mΓ£ô [PASS][0m [36mT1.27[0m: Mobile sticky action bar #mobile-action-bar present with quick action buttons
+  [32mΓ£ô [PASS][0m [36mT1.28[0m: All 3 project gallery tab content containers present (yard, cleaning, maintenance)
+  [32mΓ£ô [PASS][0m [36mT1.29[0m: Sponsorship badge section and Google Customer Reviews link present
+
+[1m--- TIER 2: BOUNDARY & CORNER CASES ---[0m
+  [32mΓ£ô [PASS][0m [36mT2.1[0m: Submitting empty form flags all required fields (Name, Email, Message) with .has-error
+  [32mΓ£ô [PASS][0m [36mT2.2[0m: Invalid email format "user@domain" (missing top-level domain) is rejected with error
+  [32mΓ£ô [PASS][0m [36mT2.3[0m: Invalid email format "not-an-email" (plain text string) is rejected with error
+  [32mΓ£ô [PASS][0m [36mT2.4[0m: Invalid email format "missingat.com" (missing @ symbol) is rejected with error
+  [32mΓ£ô [PASS][0m [36mT2.5[0m: Invalid email format "@nodomain.com" (missing username prefix) is rejected with error
+  [32mΓ£ô [PASS][0m [36mT2.6[0m: Valid email "jane.doe@example.com" passes email validation cleanly
+  [32mΓ£ô [PASS][0m [36mT2.7[0m: Whitespace-only Name input "   " is rejected
+  [32mΓ£ô [PASS][0m [36mT2.8[0m: Whitespace-only Message textarea "   " is rejected
+  [32mΓ£ô [PASS][0m [36mT2.9[0m: All navigation scroll target section IDs (#services, #about, #galleries, #reviews, #contact, #quote-form) exist in DOM
+  [32mΓ£ô [PASS][0m [36mT2.10[0m: CSS defines responsive breakpoints (@media 768px, 991px, 1024px)
+
+[90m  [Launching Playwright Headless Chromium for Viewport & Layout E2E Assertions...][0m
+  [32mΓ£ô [PASS][0m [36mT2.11[0m: Mobile viewport (375px): Sticky navbar, mobile menu toggle, and bottom action bar are visible
+  [32mΓ£ô [PASS][0m [36mT2.12[0m: Mobile viewport (375px): Zero horizontal scrollbar overflow
+  [32mΓ£ô [PASS][0m [36mT2.13[0m: Desktop viewport (1280px): Horizontal nav menu visible, mobile bottom action bar hidden
+  [32mΓ£ô [PASS][0m [36mT2.14[0m: Desktop viewport (1280px): Services grid arranges in 3 columns (computed cols: 3)
+  [32mΓ£ô [PASS][0m [36mT2.15[0m: Tablet viewport (768px): Services grid arranges in 2 columns (computed cols: 2)
+
+[1m--- TIER 3: CROSS-FEATURE INTERACTIONS ---[0m
+  [32mΓ£ô [PASS][0m [36mT3.1[0m: Clicking Hero "Get Free Quote" CTA targets #quote-form section
+  [32mΓ£ô [PASS][0m [36mT3.2[0m: Clicking mobile menu button opens menu drawer (.open) & sets aria-expanded="true"
+  [32mΓ£ô [PASS][0m [36mT3.3[0m: Clicking a nav link inside open mobile menu closes drawer & resets aria-expanded to "false"
+  [32mΓ£ô [PASS][0m [36mT3.4[0m: Valid form submission triggers success modal/toast (#success-toast.active)
+  [32mΓ£ô [PASS][0m [36mT3.5[0m: Successful form submission resets all form input values
+  [32mΓ£ô [PASS][0m [36mT3.6[0m: Clicking Toast close button hides success modal
+  [32mΓ£ô [PASS][0m [36mT3.7[0m: Clicking a gallery item opens Lightbox Modal with correct image src & caption
+  [32mΓ£ô [PASS][0m [36mT3.8[0m: Clicking Lightbox close button (&times;) closes modal
+  [32mΓ£ô [PASS][0m [36mT3.9[0m: Clicking Lightbox backdrop closes modal
+  [32mΓ£ô [PASS][0m [36mT3.10[0m: Pressing Escape key closes active Lightbox Modal
+  [32mΓ£ô [PASS][0m [36mT3.11[0m: Clicking "Cleaning Services" tab activates cleaning gallery and deactivates yard gallery
+  [32mΓ£ô [PASS][0m [36mT3.12[0m: Toggling "Send me a copy of this request" checkbox updates checked state
+
+[1m--- TIER 4: REAL-WORLD APPLICATION SCENARIOS ---[0m
+  [32mΓ£ô [PASS][0m [36mT4.1[0m: Real-World Scenario 1: Mobile User Quick Call Workflow ΓÇö Phone action links lead directly to tel:0400856532 across navbar, hero, and sticky bottom bar
+  [32mΓ£ô [PASS][0m [36mT4.2[0m: Real-World Scenario 2: Desktop Quote Request Journey ΓÇö User browses service, fills quote form, submits, and receives confirmation feedback
+  [32mΓ£ô [PASS][0m [36mT4.3[0m: Real-World Scenario 3: Gallery Discovery Workflow ΓÇö User switches gallery tab, opens enlarged lightbox photo, and closes preview modal
+
+[1m[36m====================================================[0m
+[1m[36m E2E TEST RESULTS SUMMARY [0m
+[1m[36m====================================================[0m
+ Tier 1 (Feature Coverage):            29/29 Passed
+ Tier 2 (Boundary & Corner Cases):     15/15 Passed
+ Tier 3 (Cross-Feature Interactions):  12/12 Passed
+ Tier 4 (Real-World Scenarios):         3/3 Passed
+----------------------------------------------------
+ TOTAL ASSERTIONS:                      59/59 PASSED
+ SUCCESS RATE:                          100.0%
+[1m[36m====================================================[0m
+
+[32m[1mSUITE PASSED 100%! All requirements verified successfully.[0m
