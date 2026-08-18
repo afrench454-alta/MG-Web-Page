@@ -1,0 +1,23 @@
+{
+  "name": "active",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx http-server -p 8080 -c-1",
+    "prepare": "npx playwright install --with-deps",
+    "test": "node test-runner.js",
+    "lint": "eslint . --ext .js,.cjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "eslint": "^8.50.0",
+    "playwright": "^1.62.1"
+  },
+  "dependencies": {
+    "jsdom": "^29.1.1"
+  }
+}
